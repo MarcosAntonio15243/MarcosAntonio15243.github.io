@@ -26,7 +26,7 @@ export default function Home() {
           </div>
 
           {/* About Me Section */}
-          <section>
+          <section className="flex flex-col gap-4">
             <h2>About Me</h2>
             <p>I started my journey in development in 2019 when I joined the technical course in Informatics at IFPB – Santa Luzia (PB). That’s where I had my first contact with web development, working with HTML5, CSS3, and JavaScript. Since then, I’ve been continuously building my skills, with a strong focus on modern frameworks, especially React.js, which has been my main development tool ever since.</p>
             <p>Over the years, I’ve deepened my knowledge of the React ecosystem, working with technologies like TypeScript, Styled Components, Axios, and Next.js, as well as databases like PostgreSQL. I also gained experience testing APIs with Postman and exploring Oracle APEX, which helped me broaden my understanding of web development and system integration.</p>
