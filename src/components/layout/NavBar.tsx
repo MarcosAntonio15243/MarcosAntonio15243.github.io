@@ -1,4 +1,10 @@
-export default function NavBar() {
+import { HTMLAttributes } from "react";
+
+interface NavBarProps extends HTMLAttributes<HTMLElement> {
+  className?: string;
+}
+
+export default function NavBar({ className="", ...props }: NavBarProps) {
   const navItems = [
     {
       value: "About",
@@ -19,13 +25,13 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="font-roboto font-light flex flex-row gap-10">
+    <nav className={`font-roboto font-light flex ${className}`} {...props}>
       {navItems.map((e, index) => {
         return (
           <a
             key={index}
             href={e.link}
-            className="hover:text-[var(--color-dark-gray)] hover:underline"
+            className="hover:text-[var(--color-dark-gray)] hover:underline outline-none"
           >
             {e.value}
           </a>
