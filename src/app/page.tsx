@@ -14,12 +14,11 @@ export default function Home() {
               I am a full stack developer dedicated to building complete solutions, combining the development of modern, functional interfaces with the implementation of robust back-end architectures. I am committed to technical excellence, continuous improvement, and delivering projects that drive value and innovation for clients and partners.
             </p>
           </section>
-          <hr />
-          <div>
-            <span>
-              <IoLocationOutline /> Campina Grande, Paraíba, Brasil
-            </span>
-            <a href="https://drive.google.com/file/d/1bdcbdjJdf5UdUBGVc3DPXeUWwqCL0DS-/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+          <div className="flex flex-row justify-between items-center text-[var(--color-dark-gray)] border-y-[1px] py-3 px-2 border-[var(--color-light-gray)]">
+            <div className="flex flex-row items-center gap-1">
+              <IoLocationOutline className="text-xl" /> Campina Grande, Paraíba, Brasil
+            </div>
+            <a href="https://drive.google.com/file/d/1bdcbdjJdf5UdUBGVc3DPXeUWwqCL0DS-/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline">CV</a>
           </div>
         </div>
       </main>
