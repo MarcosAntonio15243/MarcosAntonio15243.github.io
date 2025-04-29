@@ -26,12 +26,18 @@ export default function Home() {
           </div>
 
           {/* About Me Section */}
-          <section className="flex flex-col gap-4">
+          <section id="about" className="flex flex-col gap-4">
             <h2>About Me</h2>
             <p>I started my journey in development in 2019 when I joined the technical course in Informatics at IFPB – Santa Luzia (PB). That’s where I had my first contact with web development, working with HTML5, CSS3, and JavaScript. Since then, I’ve been continuously building my skills, with a strong focus on modern frameworks, especially React.js, which has been my main development tool ever since.</p>
             <p>Over the years, I’ve deepened my knowledge of the React ecosystem, working with technologies like TypeScript, Styled Components, Axios, and Next.js, as well as databases like PostgreSQL. I also gained experience testing APIs with Postman and exploring Oracle APEX, which helped me broaden my understanding of web development and system integration.</p>
             <p>I'm passionate about learning, delivering clean and efficient code, and creating great user experiences. I believe my hands-on experience, adaptability, and results-driven mindset can bring value to any team — especially when it comes to building responsive interfaces and integrating systems seamlessly.</p>
             <p>I'm excited to take on new challenges, collaborate with passionate teams, and keep growing both personally and professionally.</p>
+          </section>
+
+          {/* My Experience Section */}
+          <section id="experience" className="flex flex-col gap-5">
+            <h2>My Experience</h2>
+            
           </section>
 
         </div>
