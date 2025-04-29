@@ -13,6 +13,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+h1 {
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+p {
+  font-family: var(--font-source-serif-4);
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
 @theme inline {
   --font-roboto: var(--font-roboto);
   --font-source-serif-4: var(--font-source-serif-4);
