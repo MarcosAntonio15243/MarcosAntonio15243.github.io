@@ -11,10 +11,16 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-roboto);
   font-weight: 500;
+  letter-spacing: -0.03em;
 }
 
 h1 {
   font-size: 1.8rem;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 1.7rem;
   line-height: normal;
 }
 
