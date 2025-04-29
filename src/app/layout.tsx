@@ -1,6 +1,6 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto, Source_Serif_4 } from "next/font/google";
-import "./globals.css";
 
 export const roboto = Roboto({
   variable: "--font-roboto",
