@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --color-white: "#F7F7F7";
-  --color-gray: "#828282";
-  --color-light-gray: "#EEEEEE";
-  --color-dark-gray: "#929AAB";
-  --color-dark-blue: "#393E46";
+  --white: #F7F7F7;
+  --color-gray: #828282;
+  --color-light-gray: #EEEEEE;
+  --color-dark-gray: #929AAB;
+  --color-dark-blue: #393E46;
 }
 
 h1, h2, h3, h4, h5, h6 {
