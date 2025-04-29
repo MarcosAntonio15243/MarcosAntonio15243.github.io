@@ -1,4 +1,5 @@
 import Header from "@/components/layout/Header";
+import { IoLocationOutline } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -14,6 +15,12 @@ export default function Home() {
             </p>
           </section>
           <hr />
+          <div>
+            <span>
+              <IoLocationOutline /> Campina Grande, Paraíba, Brasil
+            </span>
+            <a href="https://drive.google.com/file/d/1bdcbdjJdf5UdUBGVc3DPXeUWwqCL0DS-/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+          </div>
         </div>
       </main>
     </div>
