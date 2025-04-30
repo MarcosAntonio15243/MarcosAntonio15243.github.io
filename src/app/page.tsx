@@ -5,9 +5,8 @@ import Textarea from "@/components/inputs/Textarea";
 import Header from "@/components/layout/Header";
 import Divider from "@/components/ui/Divider";
 import { CiLinkedin } from "react-icons/ci";
-import { FiGithub, FiInstagram } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
-import { MdOutlineEmail } from "react-icons/md";
 
 export default function Home() {
   const experiences = [
@@ -66,7 +65,9 @@ export default function Home() {
             <img
               src="/assets/profile.webp"
               alt="Profile Image"
-              className="h-20 w-20 rounded-full"
+              className="ounded-full"
+              height={80}
+              width={80}
             />
             <h1 className="flex flex-col">
               Marcos Antonio{" "}
@@ -188,7 +189,7 @@ export default function Home() {
             <form>
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col md:flex-row gap-5">
-                  <Input id={"name"} label={"Your Name"} type="text" />
+                  <Input id={"name"} label={"Your Name"} type="text" autoComplete="off" />
                   <Input
                     id={"email"}
                     label={"Your Email"}
@@ -214,6 +215,7 @@ export default function Home() {
                   href="https://github.com/MarcosAntonio15243"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Link to github profile"
                 >
                   <FiGithub className="text-xl hover:text-[var(--color-dark-gray)]" />
                 </a>
@@ -221,6 +223,7 @@ export default function Home() {
                   href="https://www.linkedin.com/in/marcos-antonio-18059b234"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Link to linkedin profile"
                 >
                   <CiLinkedin className="text-2xl hover:text-[var(--color-dark-gray)]" />
                 </a>

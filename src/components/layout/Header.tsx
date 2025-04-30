@@ -9,6 +9,8 @@ export default function Header() {
           src="/assets/logo.svg"
           alt="teste de imagem"
           className="cursor-pointer"
+          width={114}
+          height={25}
         />
         <NavBar className="hidden flex-row sm:flex gap-10" />
         <div className="sm:hidden relative">

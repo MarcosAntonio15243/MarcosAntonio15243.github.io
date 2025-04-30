@@ -2,13 +2,13 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto, Source_Serif_4 } from "next/font/google";
 
-export const roboto = Roboto({
+const roboto = Roboto({
   variable: "--font-roboto",
   weight: ['300', '500', '600'],
   subsets: ['latin'],
 });
 
-export const sourceSerif4 = Source_Serif_4({
+const sourceSerif4 = Source_Serif_4({
   variable: "--font-source-serif-4",
   weight: ['300', '400'],
   subsets: ['latin'],
