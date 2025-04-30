@@ -181,29 +181,51 @@ export default function Home() {
 
           <section id="contact" className="flex flex-col gap-5">
             <h2>Contact Me</h2>
-            <p>Have an opportunity or a project in mind? feel free to get in touch.</p>
+            <p>
+              Have an opportunity or a project in mind? feel free to get in
+              touch.
+            </p>
             <form>
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col md:flex-row gap-5">
                   <Input id={"name"} label={"Your Name"} type="text" />
-                  <Input id={"email"} label={"Your Email"} type="email" autoComplete="on" />
+                  <Input
+                    id={"email"}
+                    label={"Your Email"}
+                    type="email"
+                    autoComplete="on"
+                  />
                 </div>
                 <Textarea id={"message"} label={"Message"} />
-                <input type="submit" value="Send Message" className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer" />
+                <input
+                  type="submit"
+                  value="Send Message"
+                  className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer"
+                />
               </div>
             </form>
           </section>
 
+          {/* Footer */}
           <footer>
-            <div>
-              <FiGithub />
-              <CiLinkedin />
-              <FiInstagram />
-              <MdOutlineEmail />
+            <div className="flex flex-col gap-2 my-5 items-center text-[var(--color-dark-blue)]">
+              <div className="flex flex-row items-center gap-2">
+                <a href="#">
+                  <FiGithub className="text-xl hover:text-[var(--color-dark-gray)]" />
+                </a>
+                <a href="#">
+                  <CiLinkedin className="text-2xl hover:text-[var(--color-dark-gray)]" />
+                </a>
+                <a href="#">
+                  <FiInstagram className="text-xl hover:text-[var(--color-dark-gray)]" />
+                </a>
+                <a href="#">
+                  <MdOutlineEmail className="text-2xl hover:text-[var(--color-dark-gray)]" />
+                </a>
+              </div>
+              <span>Marcos Antonio - 2025</span>
             </div>
-            <span>Marcos Antonio - 2025</span>
           </footer>
-
         </div>
       </main>
     </div>
