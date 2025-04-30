@@ -8,55 +8,12 @@ import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 
+import { experiences } from "@/components/data/experience";
+import { features } from "@/components/data/feature";
+
 export default function Home() {
-  const experiences = [
-    {
-      srcImg: "/assets/enterprise1Logo.webp",
-      altImg: "Logo of the Municipal Government of Junco do Serido",
-      jobTitle: "Front-End Developer",
-      enterprise: "Municipal Government of Junco do Seridó (Paraíba, Brazil)",
-      dateStart: "Aug 2021",
-      dateEnd: "Oct 2021",
-      description:
-        "I developed a responsive institutional website using HTML5, CSS3, and JavaScript. I worked on designing and structuring web pages to ensure a clean, user-friendly experience across different devices. In addition, I collaborated with the internal team to gather requirements and transform them into functional solutions.",
-    },
-    {
-      srcImg: "/assets/enterprise2Logo.webp",
-      altImg: "Logo of CODEX Junior Enterprise",
-      jobTitle: "Front-End Developer and Scrum Master",
-      enterprise: "CODEX Junior Enterprise (Campina Grande, Paraíba, Brazil)",
-      dateStart: "Nov 2022",
-      dateEnd: "Jul 2023",
-      description:
-        "I developed web applications with React.js, TypeScript, Axios, HTML5, and CSS3, building reusable components and implementing state management solutions. As Scrum Master, I led agile ceremonies and helped improve team workflows, while also participating in code reviews and technical planning.",
-    },
-  ];
-
-  const features = [
-    {
-      srcImg: "/assets/feature1.webp",
-      altImg: "Preview of Traunship Landing Page project",
-      featureTitle: "Traunship Landing Page",
-      description:
-        "This project is an implementation of the Traunship 🚀 | Product Landing Page – Community design, originally created in Figma under the Creative Commons BY 4.0 license. The page was developed using Next.js and Tailwind CSS.",
-      tecnologies: ["HTML", "CSS", "JS", "TS", "React.Js", "NextJs"],
-      repositoryLink:
-        "https://github.com/MarcosAntonio15243/Traunship-Landing-Page",
-    },
-    {
-      srcImg: "/assets/feature2.webp",
-      altImg: "Preview of Simple Horizontal Portfolio project",
-      featureTitle: "Simple Horizontal Portfolio",
-      description:
-        "This project is an implementation of a simple horizontal portfolio with four sections, developed using HTML, CSS, and JavaScript.",
-      tecnologies: ["HTML", "CSS", "JS"],
-      repositoryLink:
-        "https://github.com/MarcosAntonio15243/Portfolio-Horizontal-Simples",
-    },
-  ];
-
   return (
-    <div className="">
+    <div>
       <Header />
       <main className="flex flex-col justify-center items-center">
         <div className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
@@ -188,7 +145,12 @@ export default function Home() {
             <form>
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col md:flex-row gap-5">
-                  <Input id={"name"} label={"Your Name"} type="text" autoComplete="off" />
+                  <Input
+                    id={"name"}
+                    label={"Your Name"}
+                    type="text"
+                    autoComplete="off"
+                  />
                   <Input
                     id={"email"}
                     label={"Your Email"}
