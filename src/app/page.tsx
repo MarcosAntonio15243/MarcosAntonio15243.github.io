@@ -1,7 +1,5 @@
 import ExperienceCard from "@/components/cards/ExperienceCard";
 import FeatureCard from "@/components/cards/FeatureCard";
-import Input from "@/components/inputs/Input";
-import Textarea from "@/components/inputs/Textarea";
 import Header from "@/components/layout/Header";
 import Divider from "@/components/ui/Divider";
 import { CiLinkedin } from "react-icons/ci";
@@ -10,7 +8,6 @@ import { IoLocationOutline } from "react-icons/io5";
 
 import { experiences } from "@/components/data/experience";
 import { features } from "@/components/data/feature";
-import ContactForm from "@/components/form/ContactForm";
 
 export default function Home() {
   return (
@@ -18,6 +15,7 @@ export default function Home() {
       <Header />
       <main className="flex flex-col justify-center items-center">
         <div className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
+
           {/* Presentation Section */}
           <section className="flex flex-col gap-4">
             <img
@@ -28,7 +26,9 @@ export default function Home() {
             />
             <div className="flex flex-col gap-0">
               <h1>Marcos Antonio</h1>
-              <h2 className="text-[var(--color-dark-gray)]">Full-Stack Developer</h2>
+              <h2 className="text-[var(--color-dark-gray)]">
+                Full-Stack Developer
+              </h2>
             </div>
             <p>
               I am a full stack developer dedicated to building complete
@@ -50,7 +50,7 @@ export default function Home() {
               href="https://drive.google.com/file/d/1bdcbdjJdf5UdUBGVc3DPXeUWwqCL0DS-/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold hover:underline"
+              className="font-semibold hover:underline uppercase"
             >
               CV
             </a>
@@ -141,7 +141,15 @@ export default function Home() {
               Have an opportunity or a project in mind? feel free to get in
               touch.
             </p>
-            <ContactForm />
+            <a
+              href="mailto:marcos.antonio.developer@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send email to Marcos"
+              className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer"
+            >
+              Write Message
+            </a>
           </section>
 
           {/* Footer */}
