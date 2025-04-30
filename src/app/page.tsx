@@ -1,103 +1,184 @@
-import Image from "next/image";
+import ExperienceCard from "@/components/cards/ExperienceCard";
+import FeatureCard from "@/components/cards/FeatureCard";
+import Header from "@/components/layout/Header";
+import Divider from "@/components/ui/Divider";
+import { CiLinkedin } from "react-icons/ci";
+import { FiGithub } from "react-icons/fi";
+import { IoLocationOutline } from "react-icons/io5";
+
+import { experiences } from "@/components/data/experience";
+import { features } from "@/components/data/feature";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      <Header />
+      <main className="pt-12 flex flex-col justify-center items-center">
+        <div className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+          {/* Presentation Section */}
+          <section className="flex flex-col gap-4">
+            <img
+              src="/assets/profile.webp"
+              alt="Profile photo of Marcos Antonio"
+              height={100}
+              width={100}
+              className="rounded-full"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="flex flex-col gap-0">
+              <h1>Marcos Antonio</h1>
+              <h2 className="text-[var(--color-dark-gray)]">
+                Full-Stack Developer
+              </h2>
+            </div>
+            <p>
+              I am a full stack developer dedicated to building complete
+              solutions, combining the development of modern, functional
+              interfaces with the implementation of robust back-end
+              architectures. I am committed to technical excellence, continuous
+              improvement, and delivering projects that drive value and
+              innovation for clients and partners.
+            </p>
+          </section>
+
+          {/* Localization and CV */}
+          <div className="flex flex-row justify-between items-center max-sm:text-sm text-[var(--color-dark-gray)] border-y-[1px] py-3 px-2 border-[var(--color-light-gray)]">
+            <div className="flex flex-row items-center gap-1">
+              <IoLocationOutline className="sm:text-xl" /> Campina Grande,
+              Paraiba, Brasil
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1VUnR2EF_ygJ_cYsx4itouwxfU6K1pI7S/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold hover:underline uppercase"
+            >
+              CV
+            </a>
+          </div>
+
+          {/* About Me Section */}
+          <section id="about" className="flex flex-col gap-4">
+            <h2>About Me</h2>
+            <p>
+              I started my journey in development in 2019 when I joined the
+              technical course in Informatics at IFPB – Santa Luzia (PB). That’s
+              where I had my first contact with web development, working with
+              HTML5, CSS3, and JavaScript. Since then, I’ve been continuously
+              building my skills, with a strong focus on modern frameworks,
+              especially React.js, which has been my main development tool ever
+              since.
+            </p>
+            <p>
+              Over the years, I’ve deepened my knowledge of the React ecosystem,
+              working with technologies like TypeScript, Styled Components,
+              Axios, and Next.js, as well as databases like PostgreSQL. I also
+              gained experience testing APIs with Postman and exploring Oracle
+              APEX, which helped me broaden my understanding of web development
+              and system integration.
+            </p>
+            <p>
+              I'm passionate about learning, delivering clean and efficient
+              code, and creating great user experiences. I believe my hands-on
+              experience, adaptability, and results-driven mindset can bring
+              value to any team — especially when it comes to building
+              responsive interfaces and integrating systems seamlessly.
+            </p>
+            <p>
+              I'm excited to take on new challenges, collaborate with passionate
+              teams, and keep growing both personally and professionally.
+            </p>
+          </section>
+
+          <Divider />
+
+          {/* My Experience Section */}
+          <section id="experience" className="flex flex-col gap-5">
+            <h2>My Experience</h2>
+            <div className="flex flex-col gap-8 my-5">
+              {experiences.map((e, index) => {
+                return (
+                  <ExperienceCard
+                    key={index}
+                    srcImg={e.srcImg}
+                    jobTitle={e.jobTitle}
+                    enterprise={e.enterprise}
+                    dateStart={e.dateStart}
+                    dateEnd={e.dateEnd}
+                    description={e.description}
+                  />
+                );
+              })}
+            </div>
+          </section>
+
+          <Divider />
+
+          {/* Features Section */}
+          <section id="project" className="flex flex-col gap-5">
+            <h2>Featured Project</h2>
+            <div className="flex flex-col gap-8 my-5">
+              {features.map((e, index) => {
+                return (
+                  <FeatureCard
+                    key={index}
+                    srcImg={e.srcImg}
+                    featureTitle={e.featureTitle}
+                    description={e.description}
+                    tecnologies={e.tecnologies}
+                    repositoryLink={e.repositoryLink}
+                    reverse={index % 2 != 0}
+                  />
+                );
+              })}
+            </div>
+          </section>
+
+          <Divider />
+
+          <section id="contact" className="flex flex-col gap-5">
+            <h2>Contact Me</h2>
+            <p>
+              Have an opportunity or a project in mind? feel free to get in
+              touch.
+            </p>
+            <a
+              href="mailto:marcos.antonio.developer@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send email to Marcos"
+              className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer"
+            >
+              Write Message
+            </a>
+          </section>
+
+          {/* Footer */}
+          <footer>
+            <div className="flex flex-col gap-2 my-5 items-center text-[var(--color-dark-blue)]">
+              <div className="flex flex-row items-center gap-2">
+                <a
+                  href="https://github.com/MarcosAntonio15243"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to github profile"
+                >
+                  <FiGithub className="text-xl hover:text-[var(--color-dark-gray)]" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/marcos-antonio-18059b234"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to linkedin profile"
+                >
+                  <CiLinkedin className="text-2xl hover:text-[var(--color-dark-gray)]" />
+                </a>
+              </div>
+              <span>Marcos Antonio - 2025</span>
+            </div>
+          </footer>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }

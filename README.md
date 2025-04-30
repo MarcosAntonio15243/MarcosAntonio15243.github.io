@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Portfólio de Marcos Antonio
 
-## Getting Started
+Bem-vindo ao meu portfólio! Aqui você encontrará uma seleção dos projetos que desenvolvi como desenvolvedor full-stack, utilizando tecnologias modernas como React, Next.Js, Vite, Tailwind CSS, Java, Spring Boot, entre outras. Este repositório também representa minha identidade como profissional, com foco em desempenho, acessibilidade, e responsividade.
 
-First, run the development server:
+🔗 [Clique aqui para ver o portfólio publicado](https://marcosantonio15243.github.io/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Sobre o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este portfólio foi desenvolvido com as seguintes finalidades:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📌 Apresentar meus projetos pessoais e profissionais
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧠 Compartilhar aprendizados e habilidades em desenvolvimento web
 
-## Learn More
+🎯 Facilitar o contato com recrutadores e colaboradores
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **React** – Biblioteca para construção de interfaces dinâmicas
+* **Next.js** – Framework para aplicações React com renderização SSR e geração estática
+* **Vite** – Empacotador rápido e moderno
+* **Tailwind CSS** – Framework utilitário para estilização moderna e responsiva
+* **TypeScript** – Tipagem estática para maior segurança no código
+* **GitHub Pages** – Hospedagem gratuita para sites estáticos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Responsividade
+O portfólio é 100% responsivo, adaptando-se perfeitamente a diferentes tamanhos de tela (mobile, tablet e desktop).
 
-## Deploy on Vercel
+## 🎨 Prototipação no Figma
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Você pode visualizar o protótipo do meu portfólio no Figma através do link abaixo:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔗 [Clique aqui para ver o protótipo no Figma](https://www.figma.com/design/QIBvUltNYJF4wyk3jvCjio/Portf%C3%B3lio?node-id=0-1&p=f&t=9sPeLH9v1J1Kz2OY-0)
+
+## 🤝 Contribuindo
+
+Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests. Toda ajuda é bem-vinda!
+
+## 🔗 Entre em contato comigo
+Você pode me encontrar nas seguintes plataformas:
+
+* **LinkedIn**: https://www.linkedin.com/in/marcos-antonio-18059b234/
+* **GitHub**: https://github.com/MarcosAntonio15243
