@@ -215,6 +215,7 @@ export default function Home() {
                   href="https://github.com/MarcosAntonio15243"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Link to github profile"
                 >
                   <FiGithub className="text-xl hover:text-[var(--color-dark-gray)]" />
                 </a>
@@ -222,6 +223,7 @@ export default function Home() {
                   href="https://www.linkedin.com/in/marcos-antonio-18059b234"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Link to linkedin profile"
                 >
                   <CiLinkedin className="text-2xl hover:text-[var(--color-dark-gray)]" />
                 </a>

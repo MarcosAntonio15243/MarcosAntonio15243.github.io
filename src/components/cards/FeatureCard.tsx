@@ -47,6 +47,7 @@ export default function FeatureCard({
             className="max-md:mx-auto flex flex-row gap-1 text-xl hover:text-[var(--color-dark-gray)]"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Link to repository at feature in GitHub"
           >
             <FiGithub />
             <LuSquareArrowOutUpRight />
