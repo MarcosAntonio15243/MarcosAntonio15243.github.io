@@ -1,4 +1,5 @@
 import ExperienceCard from "@/components/cards/ExperienceCard";
+import FeatureCard from "@/components/cards/FeatureCard";
 import Header from "@/components/layout/Header";
 import { IoLocationOutline } from "react-icons/io5";
 
@@ -23,6 +24,29 @@ export default function Home() {
       dateEnd: "Jul 2023",
       description:
         "I developed web applications with React.js, TypeScript, Axios, HTML5, and CSS3, building reusable components and implementing state management solutions. As Scrum Master, I led agile ceremonies and helped improve team workflows, while also participating in code reviews and technical planning.",
+    },
+  ];
+
+  const features = [
+    {
+      srcImg: "/assets/feature1.webp",
+      altImg: "Traunship Landing Page Preview",
+      featureTitle: "Traunship Landing Page",
+      description:
+        "This project is an implementation of the Traunship 🚀 | Product Landing Page – Community design, originally created in Figma under the Creative Commons BY 4.0 license. The page was developed using Next.js and Tailwind CSS.",
+      tecnologies: ["HTML", "CSS", "JS", "TS", "React.Js", "NextJs"],
+      repositoryLink:
+        "https://github.com/MarcosAntonio15243/Traunship-Landing-Page",
+    },
+    {
+      srcImg: "/assets/feature2.webp",
+      altImg: "Simple Horizontal Portfolio Preview",
+      featureTitle: "Simple Horizontal Portfolio",
+      description:
+        "This project is an implementation of a simple horizontal portfolio with four sections, developed using HTML, CSS, and JavaScript.",
+      tecnologies: ["HTML", "CSS", "JS"],
+      repositoryLink:
+        "https://github.com/MarcosAntonio15243/Portfolio-Horizontal-Simples",
     },
   ];
 
@@ -119,6 +143,28 @@ export default function Home() {
                     dateStart={e.dateStart}
                     dateEnd={e.dateEnd}
                     description={e.description}
+                  />
+                );
+              })}
+            </div>
+          </section>
+
+          <hr className="text-[var(--color-light-gray)]" />
+
+          {/* Features Section */}
+          <section id="project" className="flex flex-col gap-5">
+            <h2>Featured Project</h2>
+            <div className="flex flex-col gap-8 my-5">
+              {features.map((e, index) => {
+                return (
+                  <FeatureCard
+                    key={index}
+                    srcImg={e.srcImg}
+                    featureTitle={e.featureTitle}
+                    description={e.description}
+                    tecnologies={e.tecnologies}
+                    repositoryLink={e.repositoryLink}
+                    reverse={index % 2 != 0}
                   />
                 );
               })}
