@@ -4,7 +4,10 @@ import Input from "@/components/inputs/Input";
 import Textarea from "@/components/inputs/Textarea";
 import Header from "@/components/layout/Header";
 import Divider from "@/components/ui/Divider";
+import { CiLinkedin } from "react-icons/ci";
+import { FiGithub, FiInstagram } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
 
 export default function Home() {
   const experiences = [
@@ -178,19 +181,53 @@ export default function Home() {
 
           <section id="contact" className="flex flex-col gap-5">
             <h2>Contact Me</h2>
-            <p>Have an opportunity or a project in mind? feel free to get in touch.</p>
+            <p>
+              Have an opportunity or a project in mind? feel free to get in
+              touch.
+            </p>
             <form>
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col md:flex-row gap-5">
                   <Input id={"name"} label={"Your Name"} type="text" />
-                  <Input id={"email"} label={"Your Email"} type="email" autoComplete="on" />
+                  <Input
+                    id={"email"}
+                    label={"Your Email"}
+                    type="email"
+                    autoComplete="on"
+                  />
                 </div>
                 <Textarea id={"message"} label={"Message"} />
-                <input type="submit" value="Send Message" className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer" />
+                <input
+                  type="submit"
+                  value="Send Message"
+                  className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer"
+                />
               </div>
             </form>
           </section>
 
+          {/* Footer */}
+          <footer>
+            <div className="flex flex-col gap-2 my-5 items-center text-[var(--color-dark-blue)]">
+              <div className="flex flex-row items-center gap-2">
+                <a
+                  href="https://github.com/MarcosAntonio15243"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FiGithub className="text-xl hover:text-[var(--color-dark-gray)]" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/marcos-antonio-18059b234"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <CiLinkedin className="text-2xl hover:text-[var(--color-dark-gray)]" />
+                </a>
+              </div>
+              <span>Marcos Antonio - 2025</span>
+            </div>
+          </footer>
         </div>
       </main>
     </div>
