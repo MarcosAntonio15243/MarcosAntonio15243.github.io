@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <main className="flex flex-col justify-center items-center">
+      <main className="pt-12 flex flex-col justify-center items-center">
         <div className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
 
           {/* Presentation Section */}
