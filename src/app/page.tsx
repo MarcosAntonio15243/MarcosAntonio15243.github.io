@@ -171,6 +171,19 @@ export default function Home() {
               })}
             </div>
           </section>
+
+          <Divider />
+
+          <section id="contact" className="flex flex-col gap-5">
+            <h2>Contact Me</h2>
+            <p>Have an opportunity or a project in mind? feel free to get in touch.</p>
+            <form>
+              <div className="flex flex-row gap-10">
+                
+              </div>
+            </form>
+          </section>
+
         </div>
       </main>
     </div>
