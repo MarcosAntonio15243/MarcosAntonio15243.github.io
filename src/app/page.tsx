@@ -210,17 +210,19 @@ export default function Home() {
           <footer>
             <div className="flex flex-col gap-2 my-5 items-center text-[var(--color-dark-blue)]">
               <div className="flex flex-row items-center gap-2">
-                <a href="#">
+                <a
+                  href="https://github.com/MarcosAntonio15243"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FiGithub className="text-xl hover:text-[var(--color-dark-gray)]" />
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/marcos-antonio-18059b234"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <CiLinkedin className="text-2xl hover:text-[var(--color-dark-gray)]" />
-                </a>
-                <a href="#">
-                  <FiInstagram className="text-xl hover:text-[var(--color-dark-gray)]" />
-                </a>
-                <a href="#">
-                  <MdOutlineEmail className="text-2xl hover:text-[var(--color-dark-gray)]" />
                 </a>
               </div>
               <span>Marcos Antonio - 2025</span>
