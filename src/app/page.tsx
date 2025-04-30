@@ -1,6 +1,9 @@
 import ExperienceCard from "@/components/cards/ExperienceCard";
 import FeatureCard from "@/components/cards/FeatureCard";
+import Input from "@/components/inputs/Input";
+import Textarea from "@/components/inputs/Textarea";
 import Header from "@/components/layout/Header";
+import Divider from "@/components/ui/Divider";
 import { IoLocationOutline } from "react-icons/io5";
 
 export default function Home() {
@@ -127,7 +130,7 @@ export default function Home() {
             </p>
           </section>
 
-          <hr className="text-[var(--color-light-gray)]" />
+          <Divider />
 
           {/* My Experience Section */}
           <section id="experience" className="flex flex-col gap-5">
@@ -149,7 +152,7 @@ export default function Home() {
             </div>
           </section>
 
-          <hr className="text-[var(--color-light-gray)]" />
+          <Divider />
 
           {/* Features Section */}
           <section id="project" className="flex flex-col gap-5">
@@ -170,6 +173,24 @@ export default function Home() {
               })}
             </div>
           </section>
+
+          <Divider />
+
+          <section id="contact" className="flex flex-col gap-5">
+            <h2>Contact Me</h2>
+            <p>Have an opportunity or a project in mind? feel free to get in touch.</p>
+            <form>
+              <div className="flex flex-col gap-6">
+                <div className="flex flex-col md:flex-row gap-5">
+                  <Input id={"name"} label={"Your Name"} type="text" />
+                  <Input id={"email"} label={"Your Email"} type="email" autoComplete="on" />
+                </div>
+                <Textarea id={"message"} label={"Message"} />
+                <input type="submit" value="Send Message" className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer" />
+              </div>
+            </form>
+          </section>
+
         </div>
       </main>
     </div>
