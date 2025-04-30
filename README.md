@@ -2,6 +2,8 @@
 
 Bem-vindo ao meu portfólio! Aqui você encontrará uma seleção dos projetos que desenvolvi como desenvolvedor full-stack, utilizando tecnologias modernas como React, Next.Js, Vite, Tailwind CSS, Java, Spring Boot, entre outras. Este repositório também representa minha identidade como profissional, com foco em desempenho, acessibilidade, e responsividade.
 
+🔗 [Clique aqui para ver o portfólio publicado](https://marcosantonio15243.github.io/)
+
 ## 🚀 Sobre o Projeto
 
 Este portfólio foi desenvolvido com as seguintes finalidades:
