@@ -4,7 +4,10 @@ import Input from "@/components/inputs/Input";
 import Textarea from "@/components/inputs/Textarea";
 import Header from "@/components/layout/Header";
 import Divider from "@/components/ui/Divider";
+import { CiLinkedin } from "react-icons/ci";
+import { FiGithub, FiInstagram } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
 
 export default function Home() {
   const experiences = [
@@ -190,6 +193,16 @@ export default function Home() {
               </div>
             </form>
           </section>
+
+          <footer>
+            <div>
+              <FiGithub />
+              <CiLinkedin />
+              <FiInstagram />
+              <MdOutlineEmail />
+            </div>
+            <span>Marcos Antonio - 2025</span>
+          </footer>
 
         </div>
       </main>
