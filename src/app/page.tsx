@@ -25,12 +25,10 @@ export default function Home() {
               height={80}
               width={80}
             />
-            <h1 className="flex flex-col">
-              Marcos Antonio{" "}
-              <span className="text-[var(--color-dark-gray)]">
-                Full-Stack Developer
-              </span>
-            </h1>
+            <div className="flex flex-col gap-0">
+              <h1>Marcos Antonio</h1>
+              <h2 className="text-[var(--color-dark-gray)]">Full-Stack Developer</h2>
+            </div>
             <p>
               I am a full stack developer dedicated to building complete
               solutions, combining the development of modern, functional
