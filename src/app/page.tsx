@@ -5,9 +5,8 @@ import Textarea from "@/components/inputs/Textarea";
 import Header from "@/components/layout/Header";
 import Divider from "@/components/ui/Divider";
 import { CiLinkedin } from "react-icons/ci";
-import { FiGithub, FiInstagram } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
-import { MdOutlineEmail } from "react-icons/md";
 
 export default function Home() {
   const experiences = [
@@ -66,7 +65,9 @@ export default function Home() {
             <img
               src="/assets/profile.webp"
               alt="Profile Image"
-              className="h-20 w-20 rounded-full"
+              className="ounded-full"
+              height={80}
+              width={80}
             />
             <h1 className="flex flex-col">
               Marcos Antonio{" "}
