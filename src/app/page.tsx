@@ -21,8 +21,9 @@ export default function Home() {
             <img
               src="/assets/profile.webp"
               alt="Profile photo of Marcos Antonio"
-              height={80}
-              width={80}
+              height={100}
+              width={100}
+              className="rounded-full"
             />
             <div className="flex flex-col gap-0">
               <h1>Marcos Antonio</h1>
