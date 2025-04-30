@@ -15,6 +15,7 @@ export default function Home() {
       <Header />
       <main className="flex flex-col justify-center items-center">
         <div className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
+
           {/* Presentation Section */}
           <section className="flex flex-col gap-4">
             <img
@@ -49,7 +50,7 @@ export default function Home() {
               href="https://drive.google.com/file/d/1bdcbdjJdf5UdUBGVc3DPXeUWwqCL0DS-/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold hover:underline"
+              className="font-semibold hover:underline uppercase"
             >
               CV
             </a>
