@@ -1,6 +1,7 @@
 import { HTMLAttributes } from "react";
 import { FiGithub } from "react-icons/fi";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
+import Divider from "../ui/Divider";
 
 interface FeatureCardProps extends HTMLAttributes<HTMLElement> {
   srcImg: string;
@@ -32,7 +33,7 @@ export default function FeatureCard({
       <div className={`flex flex-col text-center ${reverse ? "md:text-right" : "md:text-left"} gap-2`}>
         <h3>{featureTitle}</h3>
         <p>{description}</p>
-        <hr className="text-[var(--color-light-gray)]" />
+        <Divider />
         <div className={`flex flex-col gap-2 justify-center items-center ${reverse ? "md:items-end" : "md:items-start"}`}>
           <div className="font-roboto font-thin flex flex-row w-fit gap-5">
             {tecnologies.map((e, index) => {

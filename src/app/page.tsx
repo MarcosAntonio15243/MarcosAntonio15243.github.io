@@ -1,6 +1,7 @@
 import ExperienceCard from "@/components/cards/ExperienceCard";
 import FeatureCard from "@/components/cards/FeatureCard";
 import Header from "@/components/layout/Header";
+import Divider from "@/components/ui/Divider";
 import { IoLocationOutline } from "react-icons/io5";
 
 export default function Home() {
@@ -127,7 +128,7 @@ export default function Home() {
             </p>
           </section>
 
-          <hr className="text-[var(--color-light-gray)]" />
+          <Divider />
 
           {/* My Experience Section */}
           <section id="experience" className="flex flex-col gap-5">
@@ -149,7 +150,7 @@ export default function Home() {
             </div>
           </section>
 
-          <hr className="text-[var(--color-light-gray)]" />
+          <Divider />
 
           {/* Features Section */}
           <section id="project" className="flex flex-col gap-5">
