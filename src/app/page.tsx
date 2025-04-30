@@ -12,7 +12,7 @@ export default function Home() {
   const experiences = [
     {
       srcImg: "/assets/enterprise1Logo.webp",
-      altImg: "Municipal Government of Junco do Serido Logo",
+      altImg: "Logo of the Municipal Government of Junco do Serido",
       jobTitle: "Front-End Developer",
       enterprise: "Municipal Government of Junco do Seridó (Paraíba, Brazil)",
       dateStart: "Aug 2021",
@@ -22,7 +22,7 @@ export default function Home() {
     },
     {
       srcImg: "/assets/enterprise2Logo.webp",
-      altImg: "CODEX Logo",
+      altImg: "Logo of CODEX Junior Enterprise",
       jobTitle: "Front-End Developer and Scrum Master",
       enterprise: "CODEX Junior Enterprise (Campina Grande, Paraíba, Brazil)",
       dateStart: "Nov 2022",
@@ -35,7 +35,7 @@ export default function Home() {
   const features = [
     {
       srcImg: "/assets/feature1.webp",
-      altImg: "Traunship Landing Page Preview",
+      altImg: "Preview of Traunship Landing Page project",
       featureTitle: "Traunship Landing Page",
       description:
         "This project is an implementation of the Traunship 🚀 | Product Landing Page – Community design, originally created in Figma under the Creative Commons BY 4.0 license. The page was developed using Next.js and Tailwind CSS.",
@@ -45,7 +45,7 @@ export default function Home() {
     },
     {
       srcImg: "/assets/feature2.webp",
-      altImg: "Simple Horizontal Portfolio Preview",
+      altImg: "Preview of Simple Horizontal Portfolio project",
       featureTitle: "Simple Horizontal Portfolio",
       description:
         "This project is an implementation of a simple horizontal portfolio with four sections, developed using HTML, CSS, and JavaScript.",
@@ -64,8 +64,7 @@ export default function Home() {
           <section className="flex flex-col gap-4">
             <img
               src="/assets/profile.webp"
-              alt="Profile Image"
-              className="ounded-full"
+              alt="Profile photo of Marcos Antonio"
               height={80}
               width={80}
             />
