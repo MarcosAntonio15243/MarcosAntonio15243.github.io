@@ -10,6 +10,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 import { experiences } from "@/components/data/experience";
 import { features } from "@/components/data/feature";
+import ContactForm from "@/components/form/ContactForm";
 
 export default function Home() {
   return (
@@ -140,30 +141,7 @@ export default function Home() {
               Have an opportunity or a project in mind? feel free to get in
               touch.
             </p>
-            <form>
-              <div className="flex flex-col gap-6">
-                <div className="flex flex-col md:flex-row gap-5">
-                  <Input
-                    id={"name"}
-                    label={"Your Name"}
-                    type="text"
-                    autoComplete="off"
-                  />
-                  <Input
-                    id={"email"}
-                    label={"Your Email"}
-                    type="email"
-                    autoComplete="on"
-                  />
-                </div>
-                <Textarea id={"message"} label={"Message"} />
-                <input
-                  type="submit"
-                  value="Send Message"
-                  className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer"
-                />
-              </div>
-            </form>
+            <ContactForm />
           </section>
 
           {/* Footer */}
