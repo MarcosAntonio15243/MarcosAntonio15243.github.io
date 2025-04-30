@@ -189,7 +189,7 @@ export default function Home() {
             <form>
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col md:flex-row gap-5">
-                  <Input id={"name"} label={"Your Name"} type="text" />
+                  <Input id={"name"} label={"Your Name"} type="text" autoComplete="off" />
                   <Input
                     id={"email"}
                     label={"Your Email"}

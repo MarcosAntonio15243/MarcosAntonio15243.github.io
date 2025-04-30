@@ -29,6 +29,8 @@ export default function FeatureCard({
         src={srcImg}
         alt={altImg}
         className="max-w-full sm:max-w-[22rem] sm:h-[16rem] object-cover object-top mx-auto rounded-xl shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+        width={352}
+        height={256}
       />
       <div className={`flex flex-col text-center ${reverse ? "md:text-right" : "md:text-left"} gap-2`}>
         <h3>{featureTitle}</h3>
