@@ -24,6 +24,12 @@ Este portfólio foi desenvolvido com as seguintes finalidades:
 ## 📱 Responsividade
 O portfólio é 100% responsivo, adaptando-se perfeitamente a diferentes tamanhos de tela (mobile, tablet e desktop).
 
+## 🎨 Prototipação no Figma
+
+Você pode visualizar o protótipo do meu portfólio no Figma através do link abaixo:
+
+🔗 [Clique aqui para ver o protótipo no Figma](https://www.figma.com/design/QIBvUltNYJF4wyk3jvCjio/Portf%C3%B3lio?node-id=0-1&p=f&t=9sPeLH9v1J1Kz2OY-0)
+
 ## 🤝 Contribuindo
 
 Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests. Toda ajuda é bem-vinda!
