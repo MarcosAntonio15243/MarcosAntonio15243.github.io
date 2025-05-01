@@ -8,6 +8,7 @@ import { IoDocumentTextOutline, IoLocationOutline } from "react-icons/io5";
 
 import { experiences } from "@/components/data/experience";
 import { features } from "@/components/data/feature";
+import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 export default function Home() {
   return (
@@ -15,7 +16,6 @@ export default function Home() {
       <Header />
       <main className="pt-12 flex flex-col justify-center items-center">
         <div className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
-
           {/* Presentation Section */}
           <section className="flex flex-col gap-4">
             <img
@@ -55,9 +55,7 @@ export default function Home() {
               className="font-roboto font-medium hover:underline"
             >
               <span className="flex items-center gap-1 sm:flex-row-reverse flex-row">
-                <IoDocumentTextOutline
-                  size={20}
-                />
+                <IoDocumentTextOutline size={20} />
                 <span className="capitalize">Curriculum Vitae</span>
               </span>
             </a>
@@ -138,6 +136,19 @@ export default function Home() {
                 );
               })}
             </div>
+            <a
+              href="https://github.com/MarcosAntonio15243?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to github repositories of Marcos"
+              className="font-roboto font-light self-center px-4 py-1.5 cursor-pointer hover:text-[var(--color-dark-gray)] underline underline-offset-2"
+            >
+              <span className="flex flex-row items-center gap-1">
+                <span>See other projects on my github</span>
+                <FiGithub />
+                <LuSquareArrowOutUpRight />
+              </span>
+            </a>
           </section>
 
           <Divider />
