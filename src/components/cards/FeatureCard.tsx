@@ -20,11 +20,16 @@ export default function FeatureCard({
   description,
   tecnologies,
   repositoryLink,
-  reverse=false,
+  reverse = false,
   ...props
 }: FeatureCardProps) {
   return (
-    <div className={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} md:flex-row md:items-center gap-6`} {...props}>
+    <div
+      className={`flex flex-col ${
+        reverse ? "md:flex-row-reverse" : "md:flex-row"
+      } md:flex-row md:items-center gap-6`}
+      {...props}
+    >
       <img
         src={srcImg}
         alt={altImg}
@@ -32,11 +37,19 @@ export default function FeatureCard({
         width={352}
         height={256}
       />
-      <div className={`flex flex-col text-center ${reverse ? "md:text-right" : "md:text-left"} gap-2`}>
+      <div
+        className={`flex flex-col text-center ${
+          reverse ? "md:text-right" : "md:text-left"
+        } gap-2`}
+      >
         <h3>{featureTitle}</h3>
         <p>{description}</p>
         <Divider />
-        <div className={`flex flex-col gap-2 justify-center items-center ${reverse ? "md:items-end" : "md:items-start"}`}>
+        <div
+          className={`flex flex-col gap-2 justify-center items-center ${
+            reverse ? "md:items-end" : "md:items-start"
+          }`}
+        >
           <div className="font-roboto font-thin flex flex-row w-fit gap-5">
             {tecnologies.map((e, index) => {
               return <span key={index}>{e}</span>;

@@ -4,10 +4,11 @@ import Header from "@/components/layout/Header";
 import Divider from "@/components/ui/Divider";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
-import { IoLocationOutline } from "react-icons/io5";
+import { IoDocumentTextOutline, IoLocationOutline } from "react-icons/io5";
 
 import { experiences } from "@/components/data/experience";
 import { features } from "@/components/data/feature";
+import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 export default function Home() {
   return (
@@ -15,7 +16,6 @@ export default function Home() {
       <Header />
       <main className="pt-12 flex flex-col justify-center items-center">
         <div className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
-
           {/* Presentation Section */}
           <section className="flex flex-col gap-4">
             <img
@@ -42,18 +42,22 @@ export default function Home() {
           </section>
 
           {/* Localization and CV */}
-          <div className="flex flex-row justify-between items-center max-sm:text-sm text-[var(--color-dark-gray)] border-y-[1px] py-3 px-2 border-[var(--color-light-gray)]">
+          <div className="flex flex-col gap-2 sm:flex-row justify-between items-center text-[var(--color-dark-gray)] border-y-[1px] py-3 px-2 border-[var(--color-light-gray)]">
             <div className="flex flex-row items-center gap-1">
               <IoLocationOutline className="sm:text-xl" /> Campina Grande,
-              Paraiba, Brasil
+              Paraiba, Brazil
             </div>
             <a
               href="https://drive.google.com/file/d/1VUnR2EF_ygJ_cYsx4itouwxfU6K1pI7S/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold hover:underline uppercase"
+              aria-label="Link to Curriculum Vitae of Marcos"
+              className="font-roboto font-medium hover:underline"
             >
-              CV
+              <span className="flex items-center gap-1 sm:flex-row-reverse flex-row">
+                <IoDocumentTextOutline size={20} />
+                <span className="capitalize">Curriculum Vitae</span>
+              </span>
             </a>
           </div>
 
@@ -132,6 +136,19 @@ export default function Home() {
                 );
               })}
             </div>
+            <a
+              href="https://github.com/MarcosAntonio15243?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to github repositories of Marcos"
+              className="font-roboto font-light self-center px-4 py-1.5 cursor-pointer hover:text-[var(--color-dark-gray)] underline underline-offset-2"
+            >
+              <span className="flex flex-row items-center gap-1">
+                <span>See other projects on my github</span>
+                <FiGithub />
+                <LuSquareArrowOutUpRight />
+              </span>
+            </a>
           </section>
 
           <Divider />
