@@ -4,7 +4,7 @@ interface NavBarProps extends HTMLAttributes<HTMLElement> {
   className?: string;
 }
 
-export default function NavBar({ className="", ...props }: NavBarProps) {
+export default function NavBar({ className = "", ...props }: NavBarProps) {
   const navItems = [
     {
       value: "About",
