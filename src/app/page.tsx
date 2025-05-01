@@ -4,7 +4,7 @@ import Header from "@/components/layout/Header";
 import Divider from "@/components/ui/Divider";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
-import { IoLocationOutline } from "react-icons/io5";
+import { IoDocumentTextOutline, IoLocationOutline } from "react-icons/io5";
 
 import { experiences } from "@/components/data/experience";
 import { features } from "@/components/data/feature";
@@ -42,18 +42,24 @@ export default function Home() {
           </section>
 
           {/* Localization and CV */}
-          <div className="flex flex-row justify-between items-center max-sm:text-sm text-[var(--color-dark-gray)] border-y-[1px] py-3 px-2 border-[var(--color-light-gray)]">
+          <div className="flex flex-col gap-2 sm:flex-row justify-between items-center text-[var(--color-dark-gray)] border-y-[1px] py-3 px-2 border-[var(--color-light-gray)]">
             <div className="flex flex-row items-center gap-1">
               <IoLocationOutline className="sm:text-xl" /> Campina Grande,
-              Paraiba, Brasil
+              Paraiba, Brazil
             </div>
             <a
               href="https://drive.google.com/file/d/1VUnR2EF_ygJ_cYsx4itouwxfU6K1pI7S/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold hover:underline uppercase"
+              aria-label="Link to Curriculum Vitae of Marcos"
+              className="font-roboto font-medium hover:underline"
             >
-              CV
+              <span className="flex items-center gap-1 sm:flex-row-reverse flex-row">
+                <IoDocumentTextOutline
+                  size={20}
+                />
+                <span className="capitalize">Curriculum Vitae</span>
+              </span>
             </a>
           </div>
 
