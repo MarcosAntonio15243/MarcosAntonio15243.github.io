@@ -8,11 +8,9 @@ Bem-vindo ao meu portfólio! Aqui você encontrará uma seleção dos projetos q
 
 Este portfólio foi desenvolvido com as seguintes finalidades:
 
-📌 Apresentar meus projetos pessoais e profissionais
-
-🧠 Compartilhar aprendizados e habilidades em desenvolvimento web
-
-🎯 Facilitar o contato com recrutadores e colaboradores
+- 📌 Apresentar meus projetos pessoais e profissionais
+- 🧠 Compartilhar aprendizados e habilidades em desenvolvimento web
+- 🎯 Facilitar o contato com recrutadores e colaboradores
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -39,5 +37,6 @@ Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests.
 ## 🔗 Entre em contato comigo
 Você pode me encontrar nas seguintes plataformas:
 
-* **LinkedIn**: https://www.linkedin.com/in/marcos-antonio-18059b234/
-* **GitHub**: https://github.com/MarcosAntonio15243
+- 📧 **Email:** marcos.antonio.developer@gmail.com
+- 💼 **LinkedIn:** [in/marcos-antonio-18059b234](https://www.linkedin.com/in/marcos-antonio-18059b234)
+- 🌐 **Github:** [marcosantonio15243](https://github.com/MarcosAntonio15243)
