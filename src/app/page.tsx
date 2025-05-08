@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Header />
       <main className="pt-12 flex flex-col justify-center items-center">
-        <div className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
+        <div id="home" className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
           {/* Presentation Section */}
           <section className="flex flex-col gap-4">
             <img
