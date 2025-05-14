@@ -48,7 +48,7 @@ export default function Home() {
               Paraiba, Brazil
             </div>
             <a
-              href="https://drive.google.com/file/d/1VUnR2EF_ygJ_cYsx4itouwxfU6K1pI7S/view?usp=sharing"
+              href="https://drive.google.com/file/d/1AmE4nRqW7zUYqHPznUYWve9DWZ2Vrzkm/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Link to Curriculum Vitae of Marcos"
