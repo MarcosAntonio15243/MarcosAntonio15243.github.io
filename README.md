@@ -1,41 +1,63 @@
-# 🌐 Portfólio de Marcos Antonio
+# 🌐 Marcos Antonio's Portfolio
 
-Bem-vindo ao meu portfólio! Aqui você encontrará uma seleção dos projetos que desenvolvi como desenvolvedor full-stack, utilizando tecnologias modernas como React, Next.Js, Vite, Tailwind CSS, Java, Spring Boot, entre outras. Este repositório também representa minha identidade como profissional, com foco em desempenho, acessibilidade, e responsividade.
 
-🔗 [Clique aqui para ver o portfólio publicado](https://marcosantonio15243.github.io/)
+Welcome to my portfolio! Here you’ll find a curated selection of projects I’ve developed as a **Full-Stack Developer**, leveraging modern technologies such as **React**, **Next.js**, **Vite**, **Tailwind CSS**, **Java**, **Spring Boot**, and more.
 
-## 🚀 Sobre o Projeto
+This portfolio represents my professional identity, showcasing my focus on **performance**, **accessibility**, and **responsiveness**.
 
-Este portfólio foi desenvolvido com as seguintes finalidades:
+🔗 [**View the live portfolio here**](https://marcosantonio15243.github.io/)
 
-- 📌 Apresentar meus projetos pessoais e profissionais
-- 🧠 Compartilhar aprendizados e habilidades em desenvolvimento web
-- 🎯 Facilitar o contato com recrutadores e colaboradores
+## 🚀 About the Project
 
-## 🛠️ Tecnologias Utilizadas
+This portfolio was built with the following goals:  
 
-* **React** – Biblioteca para construção de interfaces dinâmicas
-* **Next.js** – Framework para aplicações React com renderização SSR e geração estática
-* **Vite** – Empacotador rápido e moderno
-* **Tailwind CSS** – Framework utilitário para estilização moderna e responsiva
-* **TypeScript** – Tipagem estática para maior segurança no código
-* **GitHub Pages** – Hospedagem gratuita para sites estáticos
+- 📌 Showcase personal and professional projects  
+- 🧠 Share my knowledge and web development skills  
+- 🎯 Provide an easy way for recruiters and collaborators to connect  
 
-## 📱 Responsividade
-O portfólio é 100% responsivo, adaptando-se perfeitamente a diferentes tamanhos de tela (mobile, tablet e desktop).
+## 🛠️ Technologies
 
-## 🎨 Prototipação no Figma
+- **React** – Library for building dynamic user interfaces
+- **Next.js** – React framework for SSR and static site generation
+- **Vite** – Fast and modern build tool
+- **Tailwind CSS** – Utility-first CSS framework for modern, responsive styling
+- **TypeScript** – Static typing for safer and more maintainable code
+- **GitHub Pages** – Free hosting for static websites
 
-Você pode visualizar o protótipo do meu portfólio no Figma através do link abaixo:
+## 📱 Responsiveness
+The portfolio is fully responsive, adapting seamlessly to different screen sizes (mobile, tablet, and desktop).
 
-🔗 [Clique aqui para ver o protótipo no Figma](https://www.figma.com/design/QIBvUltNYJF4wyk3jvCjio/Portf%C3%B3lio?node-id=0-1&p=f&t=9sPeLH9v1J1Kz2OY-0)
+## 🎨 Prototyping in Figma
 
-## 🤝 Contribuindo
+You can view the portfolio prototype in Figma through the link below:
 
-Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests. Toda ajuda é bem-vinda!
+🔗 [**Click here to view the Figma prototype**](https://www.figma.com/design/QIBvUltNYJF4wyk3jvCjio/Portf%C3%B3lio?node-id=0-1&p=f&t=9sPeLH9v1J1Kz2OY-0)
 
-## 🔗 Entre em contato comigo
-Você pode me encontrar nas seguintes plataformas:
+## 🖥️ Local Setup  
+
+Want to run the project locally? Follow these steps:  
+
+```bash
+# Clone the repository (example using SSH)
+git clone https://github.com/MarcosAntonio15243/MarcosAntonio15243.github.io.git
+
+# Navigate to the folder
+cd MarcosAntonio15243.github.io
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## 🤝 Contributing
+
+Feel free to open issues, suggest improvements, or submit pull requests. All contributions are welcome!
+
+## 🔗 Contact Me
+
+You can find me on the following platforms:
 
 - 📧 **Email:** marcos.antonio.developer@gmail.com
 - 💼 **LinkedIn:** [in/marcos-antonio-18059b234](https://www.linkedin.com/in/marcos-antonio-18059b234)
