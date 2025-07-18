@@ -15,7 +15,7 @@ const sourceSerif4 = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Portfólio de Marcos Antonio",
+  title: "Marcos Antonio's Portfolio",
   description: "Website dedicado ao meu portfólio pessoal",
 };
 
