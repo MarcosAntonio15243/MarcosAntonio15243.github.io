@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto, Source_Serif_4 } from "next/font/google";
@@ -25,11 +26,18 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<body
 				className={`${roboto.variable} ${sourceSerif4.variable} antialiased`}
 			>
-				{children}
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="light"
+					enableSystem
+					disableTransitionOnChange
+				>
+					{children}
+				</ThemeProvider>
 			</body>
 		</html>
 	);
