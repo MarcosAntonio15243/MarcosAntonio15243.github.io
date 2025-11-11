@@ -1,4 +1,5 @@
-import { HTMLAttributes } from "react";
+import type { HTMLAttributes } from "react";
+import ThemeSwitch from "../buttons/ThemeSwitch";
 
 interface NavBarProps extends HTMLAttributes<HTMLElement> {
 	className?: string;
@@ -37,6 +38,7 @@ export default function NavBar({ className = "", ...props }: NavBarProps) {
 					</a>
 				);
 			})}
+			<ThemeSwitch />
 		</nav>
 	);
 }
