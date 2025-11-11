@@ -10,13 +10,13 @@ export default function HeaderButton() {
 	return (
 		<>
 			<IoMdMenu
-				className="text-4xl cursor-pointer p-1 hover:text-[var(--color-dark-gray)]"
+				className="text-4xl cursor-pointer p-1 text-[var(--color-black)] hover:text-gray-600"
 				onClick={() =>
 					setDisplay((d) => (d.includes("hidden") ? "flex" : "hidden"))
 				}
 			/>
 			<div
-				className={`absolute ${display} flex-col z-10 right-3 bg-[var(--color-white)] border-[1px] border-[var(--color-light-gray)] p-5 gap-5 rounded-2xl rounded-tr-none`}
+				className={`absolute ${display} flex-col z-10 right-3 bg-[var(--color-white)] border-[1px] border-[var(--color-border)] p-5 gap-5 rounded-2xl rounded-tr-none shadow-xs`}
 			>
 				<NavBar
 					onClick={() => setDisplay("hidden")}
