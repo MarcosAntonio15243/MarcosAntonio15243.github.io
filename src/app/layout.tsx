@@ -5,7 +5,7 @@ import { Roboto, Source_Serif_4 } from "next/font/google";
 
 const roboto = Roboto({
 	variable: "--font-roboto",
-	weight: ["300", "500", "600"],
+	weight: ["300", "400", "500", "600"],
 	subsets: ["latin"],
 });
 
