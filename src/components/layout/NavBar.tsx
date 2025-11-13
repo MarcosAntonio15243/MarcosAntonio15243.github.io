@@ -1,4 +1,5 @@
-import { HTMLAttributes } from "react";
+import type { HTMLAttributes } from "react";
+import ThemeSwitch from "../buttons/ThemeSwitch";
 
 interface NavBarProps extends HTMLAttributes<HTMLElement> {
 	className?: string;
@@ -26,17 +27,18 @@ export default function NavBar({ className = "", ...props }: NavBarProps) {
 
 	return (
 		<nav className={`font-roboto font-light flex ${className}`} {...props}>
-			{navItems.map((e, index) => {
+			{navItems.map((e) => {
 				return (
 					<a
-						key={index}
+						key={e.value}
 						href={e.link}
-						className="hover:text-[var(--color-dark-gray)] hover:underline outline-none"
+						className="text-[var(--color-text-primary)] hover:text-[var(--color-text-secondary)] hover:underline outline-none"
 					>
 						{e.value}
 					</a>
 				);
 			})}
+			<ThemeSwitch />
 		</nav>
 	);
 }

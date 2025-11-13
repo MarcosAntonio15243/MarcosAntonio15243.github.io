@@ -18,13 +18,13 @@ export default function Home() {
 				<div id="home" className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
 					{/* Presentation Section */}
 					<section className="flex flex-col gap-4">
-						<img
+						{/* <img
 							src="/assets/profile.webp"
 							alt="Profile photo of Marcos Antonio"
 							height={100}
 							width={100}
 							className="rounded-full"
-						/>
+						/> */}
 						<div className="flex flex-col gap-0">
 							<h1>Marcos Antonio</h1>
 							<h2 className="text-[var(--color-dark-gray)]">
@@ -100,10 +100,10 @@ export default function Home() {
 					<section id="experience" className="flex flex-col gap-5">
 						<h2>My Experience</h2>
 						<div className="flex flex-col gap-8 my-5">
-							{experiences.map((e, index) => {
+							{experiences.map((e) => {
 								return (
 									<ExperienceCard
-										key={index}
+										key={e.jobTitle}
 										srcImg={e.srcImg}
 										jobTitle={e.jobTitle}
 										enterprise={e.enterprise}
@@ -125,13 +125,13 @@ export default function Home() {
 							{features.map((e, index) => {
 								return (
 									<FeatureCard
-										key={index}
+										key={e.featureTitle}
 										srcImg={e.srcImg}
 										featureTitle={e.featureTitle}
 										description={e.description}
 										tecnologies={e.tecnologies}
 										repositoryLink={e.repositoryLink}
-										reverse={index % 2 != 0}
+										reverse={index % 2 !== 0}
 									/>
 								);
 							})}
