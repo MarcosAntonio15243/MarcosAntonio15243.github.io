@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import type { HTMLAttributes } from "react";
 import { FiGithub } from "react-icons/fi";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import Divider from "../ui/Divider";

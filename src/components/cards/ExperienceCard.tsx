@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import type { HTMLAttributes } from "react";
 
 interface ExperienceCardProps extends HTMLAttributes<HTMLElement> {
 	srcImg: string;

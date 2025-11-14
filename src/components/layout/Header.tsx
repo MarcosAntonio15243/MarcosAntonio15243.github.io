@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import HeaderButton from "../buttons/HeaderButton";
-import NavBar from "./NavBar";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import HeaderButton from "../buttons/HeaderButton";
+import NavBar from "./NavBar";
 
 export default function Header() {
 	const { theme } = useTheme();

@@ -66,6 +66,31 @@ header {
 	border-color: var(--color-border);
 }
 
+h1 {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+h1,
+a,
+p {
+	color: var(--color-text-primary);
+}
+
+a:hover {
+	color: var(--color-text-secondary);
+}
+
+.bold {
+	font-weight: 600;
+	margin-inline: 2px;
+}
+
 .max-content-w {
 	@apply max-w-3xl mx-5;
 }
