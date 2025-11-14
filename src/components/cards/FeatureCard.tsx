@@ -30,8 +30,8 @@ export default function FeatureCard({
 				src={srcImg}
 				alt={altImg}
 				className="object-cover w-full sm:min-w-[300px] sm:max-w-[400px] md:w-[300px] object-top mx-auto max-md:rounded-xl rounded-tl-xl max-md:shadow-[0_4px_4px_rgba(0,0,0,0.25)] border-l-[1px] border-t-[1px] border-[var(--color-bg-image)]"
-				width={300}
-				height={240}
+				width={600}
+				height={480}
 			/>
 			<div className="flex flex-col gap-2 py-4 items-center text-center md:items-baseline md:text-left">
 				<div className="font-roboto text-sm text-[var(--color-text-secondary)] font-thin flex flex-row justify-center flex-wrap w-fit gap-x-5 gap-y-1">
