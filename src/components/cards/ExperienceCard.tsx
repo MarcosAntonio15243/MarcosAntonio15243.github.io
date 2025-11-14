@@ -1,20 +1,15 @@
 import { Monitor } from "lucide-react";
-import Image from "next/image";
 import type { HTMLAttributes } from "react";
 
 interface ExperienceCardProps extends HTMLAttributes<HTMLElement> {
-	srcImg: string;
-	altImg?: string;
 	jobTitle: string;
 	enterprise: string;
 	dateStart: string;
-	dateEnd: string;
+	dateEnd: string | null;
 	description: string;
 }
 
 export default function ExperienceCard({
-	srcImg,
-	altImg = "Enterprise Logo",
 	jobTitle,
 	enterprise,
 	dateStart,
@@ -28,7 +23,7 @@ export default function ExperienceCard({
 			{...props}
 		>
 			<div className="w-full flex flex-col md:flex-row justify-between">
-				<div className="flex flex-row gap-2">
+				<div className="flex flex-row gap-4">
 					<div className="flex items-center justify-center border-2 border-[var(--color-gray-400)] rounded-full h-10 min-w-10">
 						<Monitor className="size-5 text-[var(--color-icon)]" />
 					</div>
