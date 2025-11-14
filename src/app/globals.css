@@ -8,6 +8,8 @@
 	--color-gray-400: #929aab;
 	--color-gray-600: #828282;
 
+	--color-primary: var(--color-black);
+
 	--color-dark-blue: #393e46;
 
 	--color-bg-body: var(--color-white);
@@ -29,6 +31,8 @@
 }
 
 .dark {
+	--color-primary: var(--color-white);
+
 	--color-bg-body: #2a2a2a;
 	--color-bg-surface: #1e1e1e;
 	--color-bg-card: #2e2e2e;
@@ -61,6 +65,7 @@ h6 {
 @theme inline {
 	--font-roboto: var(--font-roboto);
 	--font-source-serif-4: var(--font-source-serif-4);
+	--font-dm-serif-display: var(--font-dm-serif-display);
 }
 
 html {
@@ -91,9 +96,12 @@ h3 {
 }
 
 h1,
-a,
 p {
 	color: var(--color-text-primary);
+}
+
+.name {
+	color: var(--color-primary);
 }
 
 .button {
