@@ -5,9 +5,9 @@ import { FiGithub } from "react-icons/fi";
 import { IoDocumentTextOutline, IoLocationOutline } from "react-icons/io5";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import ExperienceCard from "@/components/cards/ExperienceCard";
-import FeatureCard from "@/components/cards/FeatureCard";
+import ProjectCard from "@/components/cards/ProjectCard";
 import { experiences } from "@/components/data/experience";
-import { features } from "@/components/data/feature";
+import { projects } from "@/components/data/projects";
 import Header from "@/components/layout/Header";
 import Divider from "@/components/ui/Divider";
 
@@ -149,16 +149,16 @@ export default function Home() {
 
 					<Divider />
 
-					{/* Features Section */}
+					{/* Featured Projects Section */}
 					<section id="project" className="flex flex-col gap-5">
 						<h2>Featured Project</h2>
 						<div className="flex flex-col gap-8 my-5">
-							{features.map((e, index) => {
+							{projects.map((e, index) => {
 								return (
-									<FeatureCard
-										key={`${index}-${e.featureTitle}`}
+									<ProjectCard
+										key={`${index}-${e.projectTitle}`}
 										srcImg={e.srcImg}
-										featureTitle={e.featureTitle}
+										projectTitle={e.projectTitle}
 										description={e.description}
 										tecnologies={e.tecnologies}
 										repositoryLink={e.repositoryLink}

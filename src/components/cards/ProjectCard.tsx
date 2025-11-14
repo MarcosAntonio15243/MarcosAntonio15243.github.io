@@ -3,27 +3,27 @@ import Image from "next/image";
 import type { HTMLAttributes } from "react";
 import { FiGithub } from "react-icons/fi";
 
-interface FeatureCardProps extends HTMLAttributes<HTMLElement> {
+interface ProjectCardProps extends HTMLAttributes<HTMLElement> {
 	srcImg: string;
 	altImg?: string;
-	featureTitle: string;
+	projectTitle: string;
 	description: string;
 	tecnologies: string[];
 	repositoryLink: string;
 }
 
-export default function FeatureCard({
+export default function ProjectCard({
 	srcImg,
-	altImg = "Feature Preview",
-	featureTitle,
+	altImg = "Featured Project Preview",
+	projectTitle,
 	description,
 	tecnologies,
 	repositoryLink,
 	...props
-}: FeatureCardProps) {
+}: ProjectCardProps) {
 	return (
 		<div
-			className="flex flex-col md:flex-row-reverse gap-4 bg-[var(--color-bg-card)] px-4 py-6 md:p-4 md:pr-0 md:pb-0 border-[1px] border-[var(--color-bg-image)]  md:border-l-4 md:border-l-[var(--color-border-card)]"
+			className="flex flex-col md:flex-row-reverse gap-4 bg-[var(--color-bg-card)] px-4 py-6 md:p-4 md:pr-0 md:pb-0 border-[1px] border-[var(--color-bg-image)] md:border-l-4 md:border-l-[var(--color-border-card)]"
 			{...props}
 		>
 			<Image
@@ -39,7 +39,7 @@ export default function FeatureCard({
 						return <span key={`${index}-${e}`}>{e}</span>;
 					})}
 				</div>
-				<h3>{featureTitle}</h3>
+				<h3>{projectTitle}</h3>
 				<p className="text-base">{description}</p>
 				<div className="flex flex-col gap-2 justify-center items-center md:items-start">
 					<a
@@ -47,7 +47,7 @@ export default function FeatureCard({
 						className=""
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label="Link to repository at feature in GitHub"
+						aria-label="Link to repository at project in GitHub"
 					>
 						<span className="font-roboto underline underline-offset-4 gap-1 flex flex-row items-center text-sm font-medium text-[var(--color-link)] hover:text-[var(--color-gray-600)]">
 							See more

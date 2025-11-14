@@ -1,8 +1,8 @@
-export const features = [
+export const projects = [
 	{
 		srcImg: "/assets/feature1.webp",
 		altImg: "Preview of Traunship Landing Page project",
-		featureTitle: "Traunship Landing Page",
+		projectTitle: "Traunship Landing Page",
 		description:
 			"This project is an implementation of the Traunship 🚀 | Product Landing Page – Community design, originally created in Figma under the Creative Commons BY 4.0 license. The page was developed using Next.js and Tailwind CSS.",
 		tecnologies: ["HTML", "CSS", "JS", "TS", "React.Js", "NextJs"],
@@ -12,7 +12,7 @@ export const features = [
 	{
 		srcImg: "/assets/feature2.webp",
 		altImg: "Preview of Simple Horizontal Portfolio project",
-		featureTitle: "Simple Horizontal Portfolio",
+		projectTitle: "Simple Horizontal Portfolio",
 		description:
 			"This project is an implementation of a simple horizontal portfolio with four sections, developed using HTML, CSS, and JavaScript.",
 		tecnologies: ["HTML", "CSS", "JS"],
