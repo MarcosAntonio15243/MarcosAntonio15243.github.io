@@ -131,7 +131,7 @@ export default function Home() {
 					{/* My Experience Section */}
 					<section id="experience" className="flex flex-col gap-5">
 						<h2>My Experience</h2>
-						<div className="flex flex-col gap-8 my-5">
+						<div className="flex flex-col gap-4 my-5">
 							{experiences.map((e) => {
 								return (
 									<ExperienceCard
