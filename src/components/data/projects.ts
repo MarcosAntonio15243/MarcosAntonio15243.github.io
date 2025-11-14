@@ -1,6 +1,6 @@
 export const projects = [
 	{
-		srcImg: "/assets/feature1.webp",
+		srcImg: "/assets/project-1.webp",
 		altImg: "Preview of Traunship Landing Page project",
 		projectTitle: "Traunship Landing Page",
 		description:
@@ -10,7 +10,7 @@ export const projects = [
 			"https://github.com/MarcosAntonio15243/Traunship-Landing-Page",
 	},
 	{
-		srcImg: "/assets/feature2.webp",
+		srcImg: "/assets/project-2.webp",
 		altImg: "Preview of Simple Horizontal Portfolio project",
 		projectTitle: "Simple Horizontal Portfolio",
 		description:
