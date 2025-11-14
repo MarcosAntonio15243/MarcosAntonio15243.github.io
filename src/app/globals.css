@@ -15,11 +15,17 @@
 	--color-bg-card: #ffffff;
 	--color-bg-image: #e7e7e7;
 
+	--color-fg-button: var(--color-white);
+	--color-bg-button: var(--color-dark-blue);
+	--color-bg-button-hover: var(--color-gray-600);
+
 	--color-text-primary: rgb(0, 0, 0, 0.6);
 	--color-text-secondary: #4a4a4a;
 	--color-icon: rgb(0, 0, 0, 0.87);
+	--color-link: var(--color-black);
 
 	--color-border: var(--color-gray-100);
+	--color-border-card: var(--color-gray-600);
 }
 
 .dark {
@@ -31,8 +37,14 @@
 	--color-text-primary: #f7f7f7;
 	--color-text-secondary: #cccccc;
 	--color-icon: #f7f7f7;
+	--color-link: var(--color-white);
+
+	--color-fg-button: var(--color-black);
+	--color-bg-button: var(--color-white);
+	--color-bg-button-hover: var(--color-gray-100);
 
 	--color-border: #393e46;
+	--color-border-card: var(--color-gray-100);
 }
 
 h1,
@@ -68,12 +80,14 @@ header {
 
 h1 {
 	font-size: 2rem;
-	font-weight: 500;
 }
 
 h2 {
 	font-size: 1.5rem;
-	font-weight: 500;
+}
+
+h3 {
+	font-size: 1.2rem;
 }
 
 h1,
@@ -82,8 +96,14 @@ p {
 	color: var(--color-text-primary);
 }
 
-a:hover {
-	color: var(--color-text-secondary);
+.button {
+	color: var(--color-fg-button);
+	background-color: var(--color-bg-button);
+}
+
+.button:hover {
+	color: var(--color-fg-button);
+	@apply bg-gray-700 } a:hover { color: var(--color-text-secondary);
 }
 
 .bold {
