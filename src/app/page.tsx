@@ -156,13 +156,12 @@ export default function Home() {
 							{features.map((e, index) => {
 								return (
 									<FeatureCard
-										key={e.featureTitle}
+										key={`${index}-${e.featureTitle}`}
 										srcImg={e.srcImg}
 										featureTitle={e.featureTitle}
 										description={e.description}
 										tecnologies={e.tecnologies}
 										repositoryLink={e.repositoryLink}
-										reverse={index % 2 !== 0}
 									/>
 								);
 							})}
@@ -195,7 +194,7 @@ export default function Home() {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Send email to Marcos"
-							className="font-roboto font-light text-white bg-[var(--color-dark-blue)] hover:bg-[var(--color-dark-gray)] self-center px-4 py-1.5 cursor-pointer"
+							className="button font-roboto font-light self-center px-4 py-1.5 cursor-pointer"
 						>
 							Write Message
 						</a>
@@ -222,7 +221,9 @@ export default function Home() {
 									<CiLinkedin className="text-2xl hover:text-[var(--color-dark-gray)]" />
 								</a>
 							</div>
-							<span>Marcos Antonio - 2025</span>
+							<span className="text-[var(--color-text-primary)]">
+								Marcos Antonio - 2025
+							</span>
 						</div>
 					</footer>
 				</div>

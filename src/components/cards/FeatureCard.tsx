@@ -1,7 +1,7 @@
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import type { HTMLAttributes } from "react";
 import { FiGithub } from "react-icons/fi";
-import { LuSquareArrowOutUpRight } from "react-icons/lu";
-import Divider from "../ui/Divider";
 
 interface FeatureCardProps extends HTMLAttributes<HTMLElement> {
 	srcImg: string;
@@ -10,7 +10,6 @@ interface FeatureCardProps extends HTMLAttributes<HTMLElement> {
 	description: string;
 	tecnologies: string[];
 	repositoryLink: string;
-	reverse?: boolean;
 }
 
 export default function FeatureCard({
@@ -20,50 +19,41 @@ export default function FeatureCard({
 	description,
 	tecnologies,
 	repositoryLink,
-	reverse = false,
 	...props
 }: FeatureCardProps) {
 	return (
 		<div
-			className={`flex flex-col ${
-				reverse ? "md:flex-row-reverse" : "md:flex-row"
-			} md:flex-row md:items-center gap-6`}
+			className="flex flex-col md:flex-row-reverse gap-4 bg-[var(--color-bg-card)] px-4 py-6 md:p-4 md:pr-0 md:pb-0 border-[1px] border-[var(--color-bg-image)]  md:border-l-4 md:border-l-[var(--color-border-card)]"
 			{...props}
 		>
-			<img
+			<Image
 				src={srcImg}
 				alt={altImg}
-				className="max-w-full sm:max-w-[22rem] sm:h-[16rem] object-cover object-top mx-auto rounded-xl shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
-				width={352}
-				height={256}
+				className="object-cover w-full sm:min-w-[300px] sm:max-w-[400px] md:w-[300px] object-top mx-auto max-md:rounded-xl rounded-tl-xl max-md:shadow-[0_4px_4px_rgba(0,0,0,0.25)] border-l-[1px] border-t-[1px] border-[var(--color-bg-image)]"
+				width={300}
+				height={240}
 			/>
-			<div
-				className={`flex flex-col text-center ${
-					reverse ? "md:text-right" : "md:text-left"
-				} gap-2`}
-			>
+			<div className="flex flex-col gap-2 py-4 items-center text-center md:items-baseline md:text-left">
+				<div className="font-roboto text-sm text-[var(--color-text-secondary)] font-thin flex flex-row justify-center flex-wrap w-fit gap-x-5 gap-y-1">
+					{tecnologies.map((e, index) => {
+						return <span key={`${index}-${e}`}>{e}</span>;
+					})}
+				</div>
 				<h3>{featureTitle}</h3>
-				<p>{description}</p>
-				<Divider />
-				<div
-					className={`flex flex-col gap-2 justify-center items-center ${
-						reverse ? "md:items-end" : "md:items-start"
-					}`}
-				>
-					<div className="font-roboto font-thin flex flex-row w-fit gap-5">
-						{tecnologies.map((e, index) => {
-							return <span key={index}>{e}</span>;
-						})}
-					</div>
+				<p className="text-base">{description}</p>
+				<div className="flex flex-col gap-2 justify-center items-center md:items-start">
 					<a
 						href={repositoryLink}
-						className="max-md:mx-auto flex flex-row gap-1 text-xl hover:text-[var(--color-dark-gray)]"
+						className=""
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Link to repository at feature in GitHub"
 					>
-						<FiGithub />
-						<LuSquareArrowOutUpRight />
+						<span className="font-roboto underline underline-offset-4 gap-1 flex flex-row items-center text-sm font-medium text-[var(--color-link)] hover:text-[var(--color-gray-600)]">
+							See more
+							<FiGithub />
+							<ArrowUpRight className="size-4" />
+						</span>
 					</a>
 				</div>
 			</div>
