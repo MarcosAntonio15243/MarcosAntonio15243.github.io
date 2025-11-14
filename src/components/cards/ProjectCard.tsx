@@ -12,7 +12,7 @@ interface ProjectCardProps extends HTMLAttributes<HTMLElement> {
 	repositoryLink: string;
 }
 
-export default function ProjectCard({
+export function ProjectCard({
 	srcImg,
 	altImg = "Featured Project Preview",
 	projectTitle,

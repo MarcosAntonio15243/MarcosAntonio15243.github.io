@@ -1,9 +1,9 @@
 "use client";
 
-import HeaderButton from "../buttons/HeaderButton";
-import NavBar from "./NavBar";
+import { HeaderButton } from "../buttons";
+import { NavBar } from "./NavBar";
 
-export default function Header() {
+export function Header() {
 	return (
 		<header className="fixed w-full bg-[var(--color-bg-body)] py-3 border-b-[1px] flex justify-center">
 			<div className="flex flex-row justify-between items-center w-full max-content-w">

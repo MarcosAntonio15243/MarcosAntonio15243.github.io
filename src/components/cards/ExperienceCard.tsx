@@ -9,7 +9,7 @@ interface ExperienceCardProps extends HTMLAttributes<HTMLElement> {
 	description: string;
 }
 
-export default function ExperienceCard({
+export function ExperienceCard({
 	jobTitle,
 	enterprise,
 	dateStart,

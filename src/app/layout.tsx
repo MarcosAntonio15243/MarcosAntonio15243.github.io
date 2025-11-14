@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import { ThemeProvider } from "@/components/providers";
 import "./globals.css";
 import type { Metadata } from "next";
 import { DM_Serif_Display, Roboto, Source_Serif_4 } from "next/font/google";
