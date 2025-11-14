@@ -131,12 +131,11 @@ export default function Home() {
 					{/* My Experience Section */}
 					<section id="experience" className="flex flex-col gap-5">
 						<h2>My Experience</h2>
-						<div className="flex flex-col gap-8 my-5">
-							{experiences.map((e) => {
+						<div className="flex flex-col gap-4 my-5">
+							{experiences.map((e, index) => {
 								return (
 									<ExperienceCard
-										key={e.jobTitle}
-										srcImg={e.srcImg}
+										key={`${index}-${e.jobTitle}`}
 										jobTitle={e.jobTitle}
 										enterprise={e.enterprise}
 										dateStart={e.dateStart}
