@@ -1,16 +1,15 @@
-import ExperienceCard from "@/components/cards/ExperienceCard";
-import FeatureCard from "@/components/cards/FeatureCard";
-import Header from "@/components/layout/Header";
-import Divider from "@/components/ui/Divider";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 import { IoDocumentTextOutline, IoLocationOutline } from "react-icons/io5";
-
+import { LuSquareArrowOutUpRight } from "react-icons/lu";
+import ExperienceCard from "@/components/cards/ExperienceCard";
+import FeatureCard from "@/components/cards/FeatureCard";
 import { experiences } from "@/components/data/experience";
 import { features } from "@/components/data/feature";
-import { LuSquareArrowOutUpRight } from "react-icons/lu";
-import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import Header from "@/components/layout/Header";
+import Divider from "@/components/ui/Divider";
 
 export default function Home() {
 	return (
@@ -19,7 +18,7 @@ export default function Home() {
 			<main className="pt-12 flex flex-col justify-center items-center">
 				<div id="home" className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
 					{/* Presentation Section */}
-					<section className="flex flex-col text-center sm:text-left sm:flex-row gap-4 items-center">
+					<section className="flex flex-col text-center sm:text-left sm:flex-row gap-5 items-center">
 						<Image
 							src="/assets/profile.svg"
 							alt="Profile photo of Marcos Antonio"
