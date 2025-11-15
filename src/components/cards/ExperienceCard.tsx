@@ -31,11 +31,11 @@ export function ExperienceCard({
 						<span className="font-light text-nowrap text-sm text-[var(--color-gray-600)]">
 							{dateStart} - {dateEnd || "Present"}
 						</span>
-						<span className="font-semibold">{jobTitle}</span>
-						<span className="text-base max-sm:text-sm max-sm:tracking-[0.03rem] text-[var(--color-text-secondary)]">
+						<h3 className="">{jobTitle}</h3>
+						<span className="text-sm sm:text-base max-sm:tracking-[0.03rem] text-[var(--color-text-secondary)]">
 							{enterprise}
 						</span>
-						<p className="text-[var(--color-text-primary)] text-base leading-snug">
+						<p className="text-[var(--color-text-primary)] text-sm md:text-base md:leading-snug">
 							{description}
 						</p>
 					</div>

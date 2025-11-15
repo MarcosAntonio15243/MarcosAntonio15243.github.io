@@ -95,6 +95,7 @@ h2 {
 
 h3 {
 	font-size: 1.2rem;
+	@apply max-sm:text-base;
 }
 
 h1,
@@ -122,5 +123,5 @@ p {
 }
 
 .max-content-w {
-	@apply max-w-3xl mx-5;
+	@apply max-w-[50rem] mx-5;
 }

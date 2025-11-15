@@ -14,7 +14,10 @@ export default function Home() {
 		<div>
 			<Header />
 			<main className="pt-12 flex flex-col justify-center items-center">
-				<div id="home" className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
+				<div
+					id="home"
+					className="mx-6 max-content-w flex flex-col gap-10 py-10"
+				>
 					{/* Presentation Section */}
 					<section className="flex flex-col text-center sm:text-left sm:flex-row gap-5 items-center">
 						<Image
