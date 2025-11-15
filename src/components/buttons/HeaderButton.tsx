@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
-import NavBar from "../layout/NavBar";
+import { NavBar } from "../layout/NavBar";
 
-export default function HeaderButton() {
+export function HeaderButton() {
 	const [display, setDisplay] = useState("hidden");
 
 	return (

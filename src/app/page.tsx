@@ -4,19 +4,20 @@ import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 import { IoDocumentTextOutline, IoLocationOutline } from "react-icons/io5";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
-import ExperienceCard from "@/components/cards/ExperienceCard";
-import FeatureCard from "@/components/cards/FeatureCard";
-import { experiences } from "@/components/data/experience";
-import { features } from "@/components/data/feature";
-import Header from "@/components/layout/Header";
-import Divider from "@/components/ui/Divider";
+import { ExperienceCard, ProjectCard } from "@/components/cards";
+import { experiences, projects } from "@/components/data";
+import { Header } from "@/components/layout";
+import { Divider } from "@/components/ui";
 
 export default function Home() {
 	return (
 		<div>
 			<Header />
 			<main className="pt-12 flex flex-col justify-center items-center">
-				<div id="home" className="mx-6 max-w-3xl flex flex-col gap-10 py-10">
+				<div
+					id="home"
+					className="mx-6 max-content-w flex flex-col gap-10 py-10"
+				>
 					{/* Presentation Section */}
 					<section className="flex flex-col text-center sm:text-left sm:flex-row gap-5 items-center">
 						<Image
@@ -55,7 +56,7 @@ export default function Home() {
 					</section>
 
 					{/* Localization and CV */}
-					<div className="flex flex-col gap-2 sm:flex-row justify-between items-center text-sm text-[var(--color-text-primary)] border-y-[1px] py-3 px-2 border-[var(--color-gray-100)]">
+					<div className="flex flex-col gap-2 sm:flex-row justify-between items-center text-sm text-[var(--color-text-primary)] border-y-[1px] py-3 px-2 border-[var(--color-border)]">
 						<div className="flex flex-row items-center gap-1 text-[var(--color-text-primary)]">
 							<IoLocationOutline className="sm:text-xl" size={16} /> Campina
 							Grande, Paraiba, Brazil
@@ -149,16 +150,16 @@ export default function Home() {
 
 					<Divider />
 
-					{/* Features Section */}
+					{/* Featured Projects Section */}
 					<section id="project" className="flex flex-col gap-5">
 						<h2>Featured Project</h2>
 						<div className="flex flex-col gap-8 my-5">
-							{features.map((e, index) => {
+							{projects.map((e, index) => {
 								return (
-									<FeatureCard
-										key={`${index}-${e.featureTitle}`}
+									<ProjectCard
+										key={`${index}-${e.projectTitle}`}
 										srcImg={e.srcImg}
-										featureTitle={e.featureTitle}
+										projectTitle={e.projectTitle}
 										description={e.description}
 										tecnologies={e.tecnologies}
 										repositoryLink={e.repositoryLink}
@@ -202,7 +203,7 @@ export default function Home() {
 
 					{/* Footer */}
 					<footer>
-						<div className="flex flex-col gap-2 my-5 items-center text-[var(--color-dark-blue)]">
+						<div className="flex flex-col gap-2 my-5 items-center text-[var(--color-text-primary)]">
 							<div className="flex flex-row items-center gap-2">
 								<a
 									href="https://github.com/MarcosAntonio15243"
@@ -210,7 +211,7 @@ export default function Home() {
 									rel="noopener noreferrer"
 									aria-label="Link to github profile"
 								>
-									<FiGithub className="text-xl hover:text-[var(--color-dark-gray)]" />
+									<FiGithub className="text-xl hover:text-[var(--color-dark-blue)]" />
 								</a>
 								<a
 									href="https://www.linkedin.com/in/marcos-antonio-18059b234"
@@ -218,7 +219,7 @@ export default function Home() {
 									rel="noopener noreferrer"
 									aria-label="Link to linkedin profile"
 								>
-									<CiLinkedin className="text-2xl hover:text-[var(--color-dark-gray)]" />
+									<CiLinkedin className="text-2xl hover:text-[var(--color-dark-blue)]" />
 								</a>
 							</div>
 							<span className="text-[var(--color-text-primary)]">

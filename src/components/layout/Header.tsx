@@ -1,33 +1,18 @@
 "use client";
 
-import Image from "next/image";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-import HeaderButton from "../buttons/HeaderButton";
-import NavBar from "./NavBar";
+import { HeaderButton } from "../buttons";
+import { NavBar } from "./NavBar";
 
-export default function Header() {
-	const { theme } = useTheme();
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	const logoSrc = theme === "light" ? "logo-dark.svg" : "logo-light.svg";
-
+export function Header() {
 	return (
-		<header className="fixed w-full bg-[var(--color-bg-body)] py-3 border-b-[1px] flex justify-center">
+		<header className="fixed w-full py-3 border-b-[1px] flex justify-center">
 			<div className="flex flex-row justify-between items-center w-full max-content-w">
-				<a href="#home" aria-label="Link to Start of Portfólio">
-					{mounted && (
-						<Image
-							src={`/assets/${logoSrc}`}
-							alt="Image showing the name Marcos"
-							width={80}
-							height={25}
-						/>
-					)}
+				<a
+					href="#home"
+					aria-label="Link to Start of Portfólio"
+					className="font-dm-serif-display text-2xl leading-0 text-[var(--color-primary)]"
+				>
+					Marcos
 				</a>
 				<NavBar className="hidden flex-row sm:flex gap-10" />
 				<div className="sm:hidden relative">
