@@ -1,6 +1,6 @@
 export const projects = [
 	{
-		srcImg: "/assets/project-1.svg",
+		srcImg: "/assets/project-1.webp",
 		altImg: "Preview of Management Platform for Networking Groups project",
 		projectTitle: "Management Platform for Networking Groups",
 		description:
@@ -19,7 +19,7 @@ export const projects = [
 			"https://github.com/MarcosAntonio15243/management-platform-for-networking-groups",
 	},
 	{
-		srcImg: "/assets/project-2.svg",
+		srcImg: "/assets/project-2.webp",
 		altImg: "Preview of Let Me Ask project",
 		projectTitle: "Let Me Ask",
 		description:
