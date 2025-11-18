@@ -1,50 +1,127 @@
 @import "tailwindcss";
 
 :root {
-  --white: #F7F7F7;
-  --color-gray: #828282;
-  --color-light-gray: #EEEEEE;
-  --color-dark-gray: #929AAB;
-  --color-dark-blue: #393E46;
+	--color-white: #fbfbfb;
+	--color-black: #212121;
+
+	--color-gray-100: #eeeeee;
+	--color-gray-400: #929aab;
+	--color-gray-600: #828282;
+
+	--color-primary: var(--color-black);
+	--color-secondary: #fefefefe;
+
+	--color-dark-blue: #393e46;
+
+	--color-bg-body: var(--color-white);
+	--color-bg-surface: #f1f1f1;
+	--color-bg-card: #ffffff;
+	--color-bg-image: #e7e7e7;
+
+	--color-fg-button: var(--color-white);
+	--color-bg-button: var(--color-dark-blue);
+	--color-bg-button-hover: var(--color-gray-600);
+
+	--color-text-primary: rgb(0, 0, 0, 0.6);
+	--color-text-secondary: #4a4a4a;
+	--color-icon: rgb(0, 0, 0, 0.87);
+	--color-link: var(--color-black);
+
+	--color-border: var(--color-gray-100);
+	--color-border-card: var(--color-gray-600);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-roboto);
-  font-weight: 500;
-  letter-spacing: -0.03em;
+.dark {
+	--color-primary: var(--color-white);
+	--color-secondary: var(--color-black);
+
+	--color-bg-body: #2a2a2a;
+	--color-bg-surface: #1e1e1e;
+	--color-bg-card: #2e2e2e;
+	--color-bg-image: #2a2a2a;
+
+	--color-text-primary: #f7f7f7;
+	--color-text-secondary: #cccccc;
+	--color-icon: #f7f7f7;
+	--color-link: var(--color-white);
+
+	--color-fg-button: var(--color-black);
+	--color-bg-button: var(--color-white);
+	--color-bg-button-hover: var(--color-gray-100);
+
+	--color-border: #393e46;
+	--color-border-card: var(--color-gray-100);
 }
 
-h1 {
-  font-size: 1.8rem;
-  line-height: normal;
-}
-
-h2 {
-  font-size: 1.7rem;
-  line-height: normal;
-}
-
-h3 {
-  font-size: 1.5rem;
-  line-height: normal;
-}
-
-p {
-  font-family: var(--font-source-serif-4);
-  font-weight: 300;
-  font-size: 1.1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-roboto);
+	font-weight: 500;
+	letter-spacing: -0.03em;
 }
 
 @theme inline {
-  --font-roboto: var(--font-roboto);
-  --font-source-serif-4: var(--font-source-serif-4);
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+	--font-roboto: var(--font-roboto);
+	--font-source-serif-4: var(--font-source-serif-4);
+	--font-dm-serif-display: var(--font-dm-serif-display);
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+}
+
+body {
+	font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+	background-color: var(--color-bg-body);
+}
+
+header {
+	background-color: var(--color-secondary);
+	border-color: var(--color-border);
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+	@apply max-sm:text-base;
+}
+
+h1,
+p {
+	color: var(--color-text-primary);
+}
+
+.name {
+	color: var(--color-primary);
+}
+
+.button {
+	color: var(--color-fg-button);
+	background-color: var(--color-bg-button);
+}
+
+.button:hover {
+	color: var(--color-fg-button);
+	@apply bg-gray-700 } a:hover { color: var(--color-text-secondary);
+}
+
+.bold {
+	font-weight: 600;
+	margin-inline: 2px;
+}
+
+.max-content-w {
+	@apply max-w-[50rem] mx-5;
 }

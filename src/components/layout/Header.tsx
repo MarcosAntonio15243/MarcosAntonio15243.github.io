@@ -1,26 +1,24 @@
-import HeaderButton from "../buttons/HeaderButton";
-import NavBar from "./NavBar";
+"use client";
 
-export default function Header() {
-  return (
-    <header className="fixed w-full bg-white py-3 border-b-[1px] border-[var(--color-light-gray)] shadow-xs">
-      <div className="flex flex-row justify-between items-center max-w-[90vw] mx-auto">
-        <a
-          href="#home"
-          aria-label="Link to Start of Portfólio"
-        >
-          <img
-            src="/assets/logo.svg"
-            alt="Image showing the name Marcos"
-            width={114}
-            height={25}
-          />
-        </a>
-        <NavBar className="hidden flex-row sm:flex gap-10" />
-        <div className="sm:hidden relative">
-          <HeaderButton />
-        </div>
-      </div>
-    </header>
-  );
+import { HeaderButton } from "../buttons";
+import { NavBar } from "./NavBar";
+
+export function Header() {
+	return (
+		<header className="fixed w-full py-3 border-b-[1px] flex justify-center">
+			<div className="flex flex-row justify-between items-center w-full max-content-w">
+				<a
+					href="#home"
+					aria-label="Link to Start of Portfólio"
+					className="font-dm-serif-display text-2xl leading-0 text-[var(--color-primary)]"
+				>
+					Marcos
+				</a>
+				<NavBar className="hidden flex-row sm:flex gap-10" />
+				<div className="sm:hidden relative">
+					<HeaderButton />
+				</div>
+			</div>
+		</header>
+	);
 }
