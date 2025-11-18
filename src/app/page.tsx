@@ -48,7 +48,7 @@ export default function Home() {
 								aria-label="Send email to Marcos"
 								className="max-sm:mx-auto"
 							>
-								<span className="text-sm font-roboto font-normal hover:underline underline-offset-2 flex flex-row items-center gap-1 tracking-wide">
+								<span className="text-sm font-roboto font-normal underline underline-offset-4 flex flex-row items-center gap-1 tracking-wide">
 									Contact Me <ArrowUpRight className="size-4" />
 								</span>
 							</a>
@@ -79,7 +79,7 @@ export default function Home() {
 					{/* About Me Section */}
 					<section id="about" className="flex flex-col gap-4 font-roboto">
 						<h2>About Me</h2>
-						<div className="flex flex-col gap-4 p-4 bg-[var(--color-bg-card)] leading-relaxed">
+						<div className="flex flex-col gap-4 p-4 bg-[var(--color-bg-card)] leading-relaxed border-[1px] border-[var(--color-bg-image)]">
 							<p>
 								I started my journey in development in 2019 when I joined the
 								technical course in Informatics at IFPB – Santa Luzia (PB).
