@@ -19,7 +19,7 @@ export function ExperienceCard({
 }: ExperienceCardProps) {
 	return (
 		<div
-			className="flex flex-col gap-2 bg-[var(--color-bg-card)] p-4"
+			className="flex flex-col gap-2 bg-[var(--color-bg-card)] p-4 border-[1px] border-[var(--color-bg-image)] md:border-l-4 md:border-l-[var(--color-border-card)]"
 			{...props}
 		>
 			<div className="w-full flex flex-col md:flex-row justify-between">
