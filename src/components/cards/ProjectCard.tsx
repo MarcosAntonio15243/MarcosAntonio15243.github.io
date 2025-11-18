@@ -39,7 +39,7 @@ export function ProjectCard({
 						return <span key={`${index}-${e}`}>{e}</span>;
 					})}
 				</div>
-				<h3>{projectTitle}</h3>
+				<h3 className="max-md:my-2">{projectTitle}</h3>
 				<p className="text-sm md:text-base">{description}</p>
 				<div className="flex flex-col gap-2 justify-center items-center md:items-start">
 					<a
